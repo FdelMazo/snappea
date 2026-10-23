@@ -245,6 +245,8 @@ impl Application for Editor {
             std::process::exit(1);
         });
         video.set_paused(true);
+        // Mute goes to the app's stream on the server, make sure to clean up previous sessions
+        video.set_muted(false);
         let duration = video.duration().as_secs_f64();
 
         let title = format!("{} - SnapPea Edit", flags.path.display());
