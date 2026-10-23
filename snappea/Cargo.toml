@@ -1,6 +1,6 @@
 [package]
 name = "snappea"
-version = "1.1.0"
+version = "1.2.0"
 edition.workspace = true
 authors.workspace = true
 license.workspace = true
@@ -47,7 +47,9 @@ gstreamer-allocators = "0.25"
 gbm = "0.18"
 drm-fourcc = "2"
 
-viewer-tools = { git = "https://github.com/pop-os/cosmic-viewer.git", features = ["serde"] }
+viewer-tools = { git = "https://github.com/pop-os/cosmic-viewer.git", features = [
+  "serde",
+] }
 viewer-widgets = { git = "https://github.com/pop-os/cosmic-viewer.git" }
 
 # i18n
